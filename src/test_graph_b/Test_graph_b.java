@@ -5,6 +5,9 @@
  */
 package test_graph_b;
 
+import java.util.ArrayList;
+import java.util.Stack;
+
 /**
  *
  * @author hsz0r
@@ -17,15 +20,24 @@ public class Test_graph_b {
     public static void main(String[] args) {
         // TODO code application logic here
         graph_b test = new graph_b(5);
-        test.addEdge(1, 4);
-        test.addEdge(3, 2);
-        test.addEdge(4, 2);
-        test.addEdge(4, 3);
 
+        test.addEdge(0, 1);
+        test.addEdge(0, 2);
+        test.addEdge(0, 3);
+        test.addEdge(0, 4);
+        test.addEdge(2, 0);
+        test.addEdge(2, 4);
+        test.addEdge(3, 0);
+        test.addEdge(3, 1);
+        test.addEdge(3, 4);
+        test.addEdge(4, 0);
+        test.addEdge(4, 1);
 
 
         test.tarjan();
+        test.fleury();
         test.kosaraju();
+        
     }
-    
+
 }
