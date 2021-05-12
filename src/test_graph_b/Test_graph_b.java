@@ -32,12 +32,10 @@ public class Test_graph_b {
         test.addEdge(3, 4);
         test.addEdge(4, 0);
         test.addEdge(4, 1);
-
-
+        
         test.tarjan();
         test.fleury();
         test.kosaraju();
-        
+        test.cycle();
     }
-
 }
